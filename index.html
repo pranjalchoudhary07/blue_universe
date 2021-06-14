@@ -22,7 +22,43 @@
             <a href="#" id="btn">Explore</a>
 
             <img src="images/rocks.png" id="rocks">
-            <img src="images/water.png" id="water">
+            
+
+
+            <!--Waves Container-->
+            <div>
+                <svg class="waves" id="water" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(0,180,212,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(0,180,212,0.5)" />
+                </g>
+                </svg>
+            </div>
+            <!--Waves end-->
+            
+            <img src="images/water.png" id="water" style="opacity: 0.9;">
+
+            <div>
+                <svg class="waves" id="water" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax2">
+                
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(0,180,212,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(0,180,212,0.2)" />
+                </g>
+                </svg>
+            </div>
+
+
+
+
         </section>
         <div class="sec">
             <h2>Parallax Effect</h2>
@@ -57,6 +93,7 @@
                 bird2.style.left = value * -5 + 'px';
                 btn.style.marginTop = value * 1.5 + 'px';
                 rocks.style.top = value * -0.15 + 'px';
+                // water.style.top = value * -0.15 + 'px';
                 forest.style.top = value * 0.25 + 'px';
                 header.style.top = value * -0.5 + 'px';
             })
